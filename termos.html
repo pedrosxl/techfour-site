@@ -3,102 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Termos e Condições | TechFour Systems</title>
+  <title>TechFour Systems</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="header">
     <div class="container nav">
-      <a href="index.html" class="logo">
-        <img src="logo.png" alt="Logo TechFour Systems" class="logo-img" />
+      <a href="#inicio" class="logo"><img src="logo.png" class="logo-img" />
       </a>
 
-      <nav class="menu">
-        <a href="index.html">Início</a>
-        <a href="index.html#quem-somos">Quem Somos</a>
-        <a href="index.html#servicos">Serviços</a>
-        <a href="index.html#contato">Contato</a>
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
       </nav>
+
+      <button class="menu-toggle" id="menu-toggle">☰</button>
     </div>
   </header>
 
-  <main class="legal-page">
-    <div class="container">
-      <h1>Termos e Condições</h1>
-      <p class="legal-updated">Última atualização: março de 2026</p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <p class="tag">Tecnologia que transforma negócios</p>
 
-      <section class="legal-section">
-        <h2>1. Aceitação dos termos</h2>
-        <p>
-          Ao acessar e utilizar o site da TechFour Systems, o usuário concorda com os presentes
-          Termos e Condições de uso. Caso não concorde com qualquer parte destes termos, recomendamos
-          que não utilize este site.
+        <h1>
+          Soluções digitais <span class="blue">inteligentes</span> para
+          empresas que querem <span class="green">crescer</span>
+        </h1>
+
+        <p class="hero-text">
+          A TechFour Systems desenvolve sites, landing pages e soluções digitais
+          com visual profissional, estrutura moderna e foco em resultado.
         </p>
-      </section>
 
-      <section class="legal-section">
-        <h2>2. Objetivo do site</h2>
+        <div class="hero-buttons">
+          <a
+            href="https://wa.me/5561999895348?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+            target="_blank"
+            class="btn primary"
+          >
+            Falar no WhatsApp
+          </a>
+
+          <a href="#quem-somos" class="btn secondary">Conhecer a TechFour</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="quem-somos">
+      <div class="container">
+        <h2>Quem Somos</h2>
         <p>
-          O site da TechFour Systems tem caráter informativo e institucional, com o objetivo de
-          apresentar a empresa, seus serviços e formas de contato.
+          A TechFour Systems é uma empresa em construção, criada por quatro estudantes
+          da área de Análise e Desenvolvimento de Sistemas, com o objetivo de desenvolver
+          soluções digitais modernas, funcionais e profissionais para empresas que querem
+          fortalecer sua presença online.
         </p>
-      </section>
 
-      <section class="legal-section">
-        <h2>3. Propriedade intelectual</h2>
+        <p class="about-spacing">
+          Nosso foco está em criar experiências digitais com design atual, boa performance
+          e comunicação clara, sempre buscando unir tecnologia, criatividade e estratégia
+          para entregar valor real a cada projeto.
+        </p>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <h2>Nossos Serviços</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Criação de Sites</h3>
+            <p>
+              Desenvolvemos sites profissionais, modernos e responsivos para fortalecer
+              a imagem da sua empresa na internet.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Landing Pages</h3>
+            <p>
+              Criamos páginas objetivas e estratégicas para campanhas, lançamentos,
+              captação de clientes e divulgação de serviços.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Soluções Digitais</h3>
+            <p>
+              Planejamos soluções sob medida para atender necessidades específicas,
+              com foco em organização, presença digital e crescimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="differentials" id="diferenciais">
+      <div class="container">
+        <h2>Por que escolher a TechFour Systems?</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Visual Profissional</h3>
+            <p>
+              Projetos com aparência moderna, alinhados com o padrão atual do mercado digital.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Atendimento Direto</h3>
+            <p>
+              Comunicação clara, objetiva e próxima, para facilitar cada etapa do projeto.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Foco em Crescimento</h3>
+            <p>
+              Nosso objetivo é ajudar empresas a se posicionarem melhor, transmitirem mais
+              confiança e conquistarem mais oportunidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <h2>Entre em Contato</h2>
         <p>
-          Todo o conteúdo disponível neste site, incluindo textos, identidade visual, logotipo,
-          elementos gráficos e estrutura, pertence à TechFour Systems ou é utilizado com autorização,
-          sendo proibida a reprodução sem consentimento prévio.
+          Fale com a TechFour Systems diretamente pelo WhatsApp e receba um atendimento
+          rápido, prático e totalmente online.
         </p>
-      </section>
 
-      <section class="legal-section">
-        <h2>4. Uso adequado</h2>
-        <p>
-          O usuário compromete-se a utilizar este site de forma lícita, ética e compatível com sua
-          finalidade, abstendo-se de praticar qualquer conduta que possa comprometer o funcionamento,
-          a segurança ou a reputação da plataforma.
-        </p>
-      </section>
+        <div class="contact-box">
+          <p><strong>WhatsApp:</strong> atendimento comercial 100% online</p>
+          <p><strong>E-mail:</strong> contato@techfoursystems.com</p>
+          <p><strong>Atendimento:</strong> 100% online</p>
+        </div>
 
-      <section class="legal-section">
-        <h2>5. Limitação de responsabilidade</h2>
-        <p>
-          A TechFour Systems busca manter as informações do site corretas e atualizadas, mas não
-          garante que todo o conteúdo esteja livre de erros, interrupções ou indisponibilidades
-          ocasionais.
-        </p>
-      </section>
+        <div class="hero-buttons contact-buttons">
+          <a
+            href="https://wa.me/5561999895348?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+            target="_blank"
+            class="btn primary"
+          >
+            Falar no WhatsApp
+          </a>
 
-      <section class="legal-section">
-        <h2>6. Links e contato</h2>
-        <p>
-          O site pode disponibilizar formas de contato externo, como WhatsApp e e-mail. O uso
-          dessas ferramentas também pode estar sujeito às políticas próprias de cada plataforma.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>7. Alterações</h2>
-        <p>
-          A TechFour Systems poderá atualizar estes Termos e Condições a qualquer momento, sem aviso
-          prévio, sendo recomendável sua consulta periódica.
-        </p>
-      </section>
-
-      <section class="legal-section">
-        <h2>8. Contato</h2>
-        <p>
-          Em caso de dúvidas sobre estes Termos e Condições, entre em contato pelo e-mail
-          <strong>systemstechfour@gmail.com</strong>.
-        </p>
-      </section>
-
-      <a href="index.html" class="btn primary legal-btn">Voltar ao site</a>
-    </div>
+          <a href="#inicio" class="btn secondary">Voltar ao Início</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3 class="footer-title">TechFour Systems</h3>
+        <p class="footer-text">
+          Soluções digitais modernas para empresas que querem crescer com mais presença,
+          credibilidade e profissionalismo.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:systemstechfour@gmail.com">systemstechfour@gmail.com</a>
+        <a href="termos.html">Termos e Condições</a>
+        <a href="cookies.html">Política de Cookies</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 TechFour Systems. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/5561999895348?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Falar no WhatsApp"
+  >
+    <span>💬</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
