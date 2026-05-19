@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>TechFour Systems | Criação de Sites Profissionais e Landing Pages</title>
-
-<meta name="description" content="Criação de sites profissionais, landing pages e sistemas web. A TechFour Systems ajuda sua empresa a crescer com presença digital moderna.">
-
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.png">
-<link rel="icon" sizes="32x32" href="/favicon.png">
-<link rel="icon" sizes="192x192" href="/favicon.png">
-
-<link rel="stylesheet" href="style.css" />
-
+  <meta name="description" content="Criação de sites profissionais, landing pages e sistemas web. A TechFour Systems ajuda sua empresa a crescer com presença digital moderna." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body> 
+<body>
 
-<header class="header">
+<!-- ══════════════ HEADER ══════════════ -->
+<header class="header" id="header">
   <div class="container nav">
-
-    <a href="#inicio" class="logo-text">
-      Tech<span>Four</span> Systems
-    </a>
+    <a href="#inicio" class="logo-text">Tech<span>Four</span> Systems</a>
 
     <nav class="menu" id="menu">
       <a href="#inicio">Início</a>
@@ -32,288 +24,452 @@
       <a href="#servicos">Serviços</a>
       <a href="#portfolio">Portfólio</a>
       <a href="#contato">Contato</a>
-      <a
-        href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
-        target="_blank"
-        class="nav-cta"
-      >
-        Orçamento
-      </a>
+      <a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+         target="_blank" rel="noopener" class="nav-cta">Orçamento</a>
     </nav>
 
-    <button class="menu-toggle" id="menu-toggle">☰</button>
-
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <main>
 
-  <!-- HERO -->
+  <!-- ══════════════ HERO ══════════════ -->
   <section class="hero" id="inicio">
-    <div class="container hero-content">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-bg"></div>
 
-      <p class="tag">Soluções digitais para empresas</p>
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <p class="tag">Desenvolvimento Web Profissional</p>
 
-      <h1>
-        Sites profissionais para empresas que querem 
-        <span class="green">crescer</span> e vender mais
-      </h1>
+        <h1>
+          Sites profissionais para empresas que querem
+          <span class="highlight">crescer</span> e vender mais
+        </h1>
 
-      <p class="hero-text">
-        Criamos sites, landing pages e sistemas com design moderno,
-        alta performance e foco total em resultado e credibilidade.
-      </p>
+        <p class="hero-text">
+          Criamos sites, landing pages e sistemas com design moderno,
+          alta performance e foco total em resultado e credibilidade.
+        </p>
 
-      <div class="hero-buttons">
-        <a
-          href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
-          target="_blank"
-          class="btn primary"
-        >
-          Solicitar orçamento
-        </a>
-
-        <a href="#servicos" class="btn secondary">
-          Ver serviços
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div>
-          <h3>+10</h3>
-          <p>Projetos desenvolvidos</p>
+        <div class="hero-buttons">
+          <a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+             target="_blank" rel="noopener" class="btn primary">Solicitar orçamento</a>
+          <a href="#servicos" class="btn secondary">Ver serviços</a>
         </div>
 
-        <div>
-          <h3>100%</h3>
-          <p>Online</p>
-        </div>
-
-        <div>
-          <h3>Rápido</h3>
-          <p>Atendimento direto</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>+10</strong>
+            <span>Projetos entregues</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Online &amp; Remoto</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <strong>24h</strong>
+            <span>Atendimento</span>
+          </div>
         </div>
       </div>
 
+      <div class="hero-visual">
+        <div class="browser-mockup">
+          <div class="browser-bar">
+            <span class="b-dot red"></span>
+            <span class="b-dot yellow"></span>
+            <span class="b-dot green"></span>
+            <div class="browser-url">techfour.com.br/seu-site</div>
+          </div>
+          <div class="browser-screen">
+            <div class="mock-nav-bar">
+              <div class="mock-logo-bar"></div>
+              <div class="mock-links">
+                <div class="mock-link"></div>
+                <div class="mock-link"></div>
+                <div class="mock-link"></div>
+                <div class="mock-cta-bar"></div>
+              </div>
+            </div>
+            <div class="mock-hero-area">
+              <div class="mock-h wide"></div>
+              <div class="mock-h medium"></div>
+              <div class="mock-p"></div>
+              <div class="mock-p short"></div>
+              <div class="mock-btns">
+                <div class="mock-btn-pill prim"></div>
+                <div class="mock-btn-pill ghost"></div>
+              </div>
+            </div>
+            <div class="mock-cards-row">
+              <div class="mock-card-s"></div>
+              <div class="mock-card-s accent"></div>
+              <div class="mock-card-s"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-badge b1">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          SEO otimizado
+        </div>
+        <div class="hero-badge b2">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/></svg>
+          100% responsivo
+        </div>
+        <div class="hero-badge b3">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Alta performance
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SOBRE -->
+  <!-- ══════════════ TICKER ══════════════ -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span>Sites Institucionais</span><span class="sep">◆</span>
+      <span>Landing Pages</span><span class="sep">◆</span>
+      <span>Catálogos Digitais</span><span class="sep">◆</span>
+      <span>E-commerces</span><span class="sep">◆</span>
+      <span>Sistemas Web</span><span class="sep">◆</span>
+      <span>Dashboards</span><span class="sep">◆</span>
+      <span>Sites Institucionais</span><span class="sep">◆</span>
+      <span>Landing Pages</span><span class="sep">◆</span>
+      <span>Catálogos Digitais</span><span class="sep">◆</span>
+      <span>E-commerces</span><span class="sep">◆</span>
+      <span>Sistemas Web</span><span class="sep">◆</span>
+      <span>Dashboards</span><span class="sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ QUEM SOMOS ══════════════ -->
   <section class="about" id="quem-somos">
-    <div class="container">
-      <h2>Quem Somos</h2>
+    <div class="container about-layout">
 
-      <p>
-        A TechFour Systems é uma empresa criada por estudantes da área de tecnologia,
-        com o objetivo de desenvolver soluções digitais modernas e profissionais para empresas.
-      </p>
+      <div class="about-img-col">
+        <div class="about-img-frame">
+          <img src="imagens/foto-equipe.jpeg"
+               alt="Setup de desenvolvimento da TechFour Systems" class="about-img" />
+        </div>
+        <div class="about-float-card">
+          <div class="afc-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div>
+            <div class="afc-num">+10</div>
+            <div class="afc-label">Projetos entregues</div>
+          </div>
+        </div>
+      </div>
 
-      <p class="about-spacing">
-        Nosso foco está em criar sites com design atual, boa performance e comunicação clara,
-        sempre buscando gerar valor real para cada cliente.
-      </p>
+      <div class="about-text-col">
+        <p class="section-eyebrow">A empresa</p>
+        <h2>Quem Somos</h2>
+        <p>
+          A TechFour Systems é uma empresa criada por estudantes da área de tecnologia,
+          com o objetivo de desenvolver soluções digitais modernas e profissionais para empresas.
+        </p>
+        <p class="about-spacing">
+          Nosso foco está em criar sites com design atual, boa performance e comunicação clara,
+          sempre buscando gerar valor real para cada cliente. Atendemos 100% de forma online,
+          com agilidade e compromisso em cada projeto.
+        </p>
+        <blockquote class="about-quote">
+          "Cada site que entregamos representa a identidade digital de uma empresa — e levamos isso muito a sério."
+        </blockquote>
+        <a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+           target="_blank" rel="noopener" class="btn primary">Falar com a equipe</a>
+      </div>
+
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
+  <!-- ══════════════ SERVIÇOS ══════════════ -->
   <section class="services" id="servicos">
-  <div class="container">
+    <div class="container">
+      <p class="section-eyebrow">O que fazemos</p>
+      <h2>Nossos Serviços</h2>
+      <p class="section-subtitle">
+        Desenvolvemos soluções digitais completas para empresas que querem crescer,
+        se posicionar melhor e conquistar mais clientes.
+      </p>
 
-    <h2>Nossos Serviços</h2>
-
-    <p class="section-subtitle">
-      Desenvolvemos soluções digitais completas para empresas que querem crescer,
-      se posicionar melhor e conquistar mais clientes.
-    </p>
-
-    <div class="services-grid">
-
-      <div class="card service-card">
-        <h3>Criação de Sites</h3>
-        <p>
-          Sites profissionais, modernos e responsivos para transmitir credibilidade
-          e fortalecer sua presença online.
-        </p>
-      </div>
-
-      <div class="card service-card destaque">
-        <h3>Landing Pages</h3>
-        <p>
-          Páginas focadas em conversão, ideais para campanhas, anúncios e captação
-          de clientes via WhatsApp.
-        </p>
-      </div>
-
-      <div class="card service-card">
-        <h3>Sistemas Web</h3>
-        <p>
-          Desenvolvimento de soluções personalizadas para organização, gestão
-          e automação de processos do seu negócio.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="process" id="como-funciona">
-  <div class="container">
-    <h2>Como funciona</h2>
-    <p class="section-subtitle">
-      Um processo simples, direto e pensado para transformar sua ideia em uma presença digital profissional.
-    </p>
-
-    <div class="process-grid">
-      <div class="card process-card">
-        <span class="process-number">01</span>
-        <h3>Contato inicial</h3>
-        <p>Você entra em contato pelo WhatsApp e nos explica sua necessidade.</p>
-      </div>
-
-      <div class="card process-card">
-        <span class="process-number">02</span>
-        <h3>Alinhamento</h3>
-        <p>Entendemos o seu objetivo, analisamos a melhor solução e definimos a proposta.</p>
-      </div>
-
-      <div class="card process-card destaque">
-        <span class="process-number">03</span>
-        <h3>Desenvolvimento</h3>
-        <p>Criamos o projeto com design moderno, estrutura profissional e foco em resultado.</p>
-      </div>
-
-      <div class="card process-card">
-        <span class="process-number">04</span>
-        <h3>Entrega</h3>
-        <p>Seu site é finalizado, revisado e entregue pronto para fortalecer sua presença online.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="portfolio" id="portfolio">
-  <div class="container">
-    <h2>Projetos e Exemplos</h2>
-    <p class="section-subtitle">
-      Alguns layouts e soluções desenvolvidas para demonstrar nosso padrão visual, organização e foco em resultado.
-    </p>
-
-    <div class="portfolio-grid">
-      <div class="card portfolio-card">
-        <img src="imagens/projeto-mt-portas.png" alt="Projeto de site para MT Portas" class="portfolio-img" />
-        <div class="portfolio-content">
-          <h3>MT Portas</h3>
-          <p>Landing page com visual sofisticado, foco em apresentação de produto e solicitação de orçamento.</p>
+      <div class="services-grid">
+        <div class="card service-card">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <span class="svc-num">01</span>
+          <h3>Criação de Sites</h3>
+          <p>Sites profissionais, modernos e responsivos para transmitir credibilidade e fortalecer sua presença online.</p>
+          <div class="svc-tags"><span>Responsivo</span><span>SEO</span><span>Rápido</span></div>
         </div>
-      </div>
 
-      <div class="card portfolio-card">
-        <img src="imagens/projeto-quebrada-outlet.png" alt="Projeto de site para Quebrada Outlet" class="portfolio-img" />
-        <div class="portfolio-content">
-          <h3>Quebrada Outlet</h3>
-          <p>Layout comercial com identidade forte, botões de ação e foco em catálogo, vendas e WhatsApp.</p>
+        <div class="card service-card destaque">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <span class="svc-num">02</span>
+          <h3>Landing Pages</h3>
+          <p>Páginas focadas em conversão, ideais para campanhas, anúncios e captação de clientes via WhatsApp.</p>
+          <div class="svc-tags"><span>Alta conversão</span><span>Anúncios</span><span>WhatsApp</span></div>
         </div>
-      </div>
 
-      <div class="card portfolio-card">
-        <img src="imagens/projeto-aq-servicos.png
-        " alt="Projeto de plataforma AQ Serviços" class="portfolio-img" />
-        <div class="portfolio-content">
-          <h3>AQ Serviços</h3>
-          <p>Plataforma com estrutura organizada para busca de profissionais, categorias e navegação simples.</p>
+        <div class="card service-card">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <span class="svc-num">03</span>
+          <h3>Sistemas Web</h3>
+          <p>Desenvolvimento de soluções personalizadas para organização, gestão e automação de processos.</p>
+          <div class="svc-tags"><span>Sob medida</span><span>Painel</span><span>Integração</span></div>
+        </div>
+
+        <div class="card service-card">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <span class="svc-num">04</span>
+          <h3>Catálogos Digitais</h3>
+          <p>Apresente produtos e serviços com visual de alto nível, fácil de compartilhar e sempre atualizado.</p>
+          <div class="svc-tags"><span>Compartilhável</span><span>Filtros</span><span>Mobile</span></div>
+        </div>
+
+        <div class="card service-card">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+          <span class="svc-num">05</span>
+          <h3>E-commerces</h3>
+          <p>Lojas virtuais completas com checkout, integração de pagamentos e gestão de produtos.</p>
+          <div class="svc-tags"><span>Pagamentos</span><span>Estoque</span><span>Dashboard</span></div>
+        </div>
+
+        <div class="card service-card">
+          <div class="svc-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <span class="svc-num">06</span>
+          <h3>Manutenção & Suporte</h3>
+          <p>Seu site sempre atualizado, seguro e evoluindo. Atualizações e suporte técnico contínuo.</p>
+          <div class="svc-tags"><span>Suporte</span><span>Segurança</span><span>Updates</span></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- DIFERENCIAIS -->
+  <!-- ══════════════ PORTFÓLIO ══════════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <p class="section-eyebrow">Portfólio</p>
+      <h2>Projetos e Exemplos</h2>
+      <p class="section-subtitle">
+        Layouts e soluções desenvolvidas para demonstrar nosso padrão visual,
+        organização e foco em resultado.
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="card portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="imagens/projeto-mt-portas.png" alt="Projeto MT Portas" class="portfolio-img" />
+          </div>
+          <div class="portfolio-content">
+            <span class="ptag">Landing Page</span>
+            <h3>MT Portas</h3>
+            <p>Landing page com visual sofisticado, foco em apresentação de produto e solicitação de orçamento.</p>
+          </div>
+        </div>
+
+        <div class="card portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="imagens/projeto-quebrada-outlet.png" alt="Projeto Quebrada Outlet" class="portfolio-img" />
+          </div>
+          <div class="portfolio-content">
+            <span class="ptag">E-commerce</span>
+            <h3>Quebrada Outlet</h3>
+            <p>Layout comercial com identidade forte, botões de ação e foco em catálogo, vendas e WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="card portfolio-card">
+          <div class="portfolio-img-wrap">
+            <img src="imagens/projeto-aq-servicos.png" alt="Projeto AQ Serviços" class="portfolio-img" />
+          </div>
+          <div class="portfolio-content">
+            <span class="ptag">Plataforma Web</span>
+            <h3>AQ Serviços</h3>
+            <p>Plataforma com estrutura organizada para busca de profissionais, categorias e navegação simples.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROCESSO ══════════════ -->
+  <section class="process" id="como-funciona">
+    <div class="container">
+      <p class="section-eyebrow">Como trabalhamos</p>
+      <h2>Como funciona</h2>
+      <p class="section-subtitle">
+        Um processo simples, direto e pensado para transformar sua ideia
+        em uma presença digital profissional.
+      </p>
+
+      <div class="process-grid">
+        <div class="card process-card">
+          <span class="process-number">01</span>
+          <h3>Contato inicial</h3>
+          <p>Você entra em contato pelo WhatsApp e nos explica sua necessidade e objetivo.</p>
+        </div>
+        <div class="card process-card">
+          <span class="process-number">02</span>
+          <h3>Alinhamento</h3>
+          <p>Entendemos seu objetivo, analisamos a melhor solução e definimos a proposta.</p>
+        </div>
+        <div class="card process-card destaque">
+          <span class="process-number">03</span>
+          <h3>Desenvolvimento</h3>
+          <p>Criamos o projeto com design moderno, estrutura profissional e foco em resultado.</p>
+        </div>
+        <div class="card process-card">
+          <span class="process-number">04</span>
+          <h3>Entrega</h3>
+          <p>Seu site é finalizado, revisado e entregue pronto para fortalecer sua presença online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ DIFERENCIAIS ══════════════ -->
   <section class="differentials" id="diferenciais">
     <div class="container">
-      <h2>Por que escolher a TechFour Systems?</h2>
-
+      <p class="section-eyebrow">Por que nos escolher</p>
+      <h2>Por que escolher a TechFour?</h2>
       <p class="section-subtitle">
-        Desenvolvemos soluções digitais com foco em qualidade, presença profissional e resultado para o seu negócio.
+        Qualidade, presença profissional e resultado real para o seu negócio.
       </p>
 
       <div class="differentials-grid">
-
         <div class="card diferencial-card">
           <h3>Atendimento Rápido</h3>
           <p>Respostas ágeis e comunicação direta do início ao fim do projeto.</p>
         </div>
-
         <div class="card diferencial-card destaque">
           <h3>Visual Moderno</h3>
-          <p>Design alinhado ao padrão atual do mercado.</p>
+          <p>Design alinhado ao padrão atual do mercado e às melhores práticas de UX.</p>
         </div>
-
         <div class="card diferencial-card">
           <h3>100% Responsivo</h3>
           <p>Funciona perfeitamente em celular, tablet e computador.</p>
         </div>
-
         <div class="card diferencial-card">
           <h3>Alta Performance</h3>
-          <p>Carregamento rápido e experiência otimizada.</p>
+          <p>Carregamento rápido, código limpo e experiência otimizada.</p>
         </div>
-
+        <div class="card diferencial-card">
+          <h3>Prazo Garantido</h3>
+          <p>Compromisso real com datas de entrega e qualidade em cada etapa.</p>
+        </div>
         <div class="card diferencial-card">
           <h3>Soluções Personalizadas</h3>
-          <p>Projetos feitos sob medida para cada cliente.</p>
+          <p>Projetos feitos sob medida — nada de templates genéricos.</p>
         </div>
-
-        <div class="card diferencial-card">
-          <h3>Prazo e Qualidade</h3>
-          <p>Compromisso com entrega e qualidade.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section class="contact" id="contato">
-    <div class="container">
-      <h2>Entre em Contato</h2>
-
-      <p>
-        Fale com a TechFour Systems e solicite um orçamento para o seu projeto.
-      </p>
-
-      <div class="contact-box">
-        <p><strong>WhatsApp:</strong> (61) 99965-3096</p>
-        <p><strong>E-mail:</strong> contato@techfoursystems.com</p>
-        <p><strong>Atendimento:</strong> 100% online</p>
+  <!-- ══════════════ CTA BAND ══════════════ -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Pronto para ter um site que realmente trabalha por você?</h2>
+        <p>Sem enrolação, sem promessas vazias — converse com nossa equipe agora.</p>
       </div>
-
-      <div class="hero-buttons contact-buttons">
-        <a
-          href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
-          target="_blank"
-          class="btn primary"
-        >
-          Solicitar orçamento
+      <div class="cta-actions">
+        <a href="#contato" class="btn primary large">Iniciar projeto agora</a>
+        <a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+           target="_blank" rel="noopener" class="btn wpp-btn">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTATO ══════════════ -->
+  <section class="contact" id="contato">
+    <div class="container contact-layout">
+
+      <div class="contact-info-col">
+        <p class="section-eyebrow">Contato</p>
+        <h2>Vamos conversar sobre o seu projeto</h2>
+        <p class="contact-lead">
+          Entre em contato diretamente ou preencha o formulário ao lado.
+        </p>
+
+        <div class="contact-channels">
+          <a href="mailto:systemstechfour@gmail.com" class="channel-item">
+            <div class="ch-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="ch-label">E-mail</div><div class="ch-val">systemstechfour@gmail.com</div></div>
+          </a>
+          <a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+             target="_blank" rel="noopener" class="channel-item">
+            <div class="ch-icon wpp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+            <div><div class="ch-label">WhatsApp</div><div class="ch-val">+55 (61) 9 9965-3096</div></div>
+          </a>
+          <a href="https://instagram.com/techfoursystems" target="_blank" rel="noopener" class="channel-item">
+            <div class="ch-icon insta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div><div class="ch-label">Instagram</div><div class="ch-val">@techfoursystems</div></div>
+          </a>
+          <div class="channel-item no-link">
+            <div class="ch-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="ch-label">Atendimento</div><div class="ch-val">Todos os dias, 24h</div></div>
+          </div>
+        </div>
+      </div>
+
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formspree.io/f/xdajkdoj"
+        method="POST"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="Nome" placeholder="João Silva" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" placeholder="joao@empresa.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Tipo de projeto</label>
+          <select id="service" name="Projeto" required>
+            <option value="">Selecione um tipo</option>
+            <option>Site Institucional</option>
+            <option>Landing Page</option>
+            <option>Catálogo Digital</option>
+            <option>E-commerce</option>
+            <option>Sistema Web</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Conte sobre o projeto</label>
+          <textarea id="message" name="Mensagem" rows="5" placeholder="O que você precisa? Qual o prazo? Qual o orçamento estimado?" required></textarea>
+        </div>
+        <button type="submit" class="btn primary full-w">Enviar mensagem</button>
+        <p class="form-note">Retornamos rapidamente. Sem spam, prometemos.</p>
+      </form>
 
     </div>
   </section>
 
 </main>
 
-
-  <footer class="footer">
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
   <div class="container footer-content">
-
     <div class="footer-brand">
-      <h3 class="footer-title">TechFour Systems</h3>
-      <p class="footer-text">
-        Soluções digitais modernas para empresas que querem crescer com mais presença,
-        credibilidade e resultado no ambiente online.
-      </p>
+      <a href="#inicio" class="logo-text footer-logo">Tech<span>Four</span> Systems</a>
+      <p class="footer-text">Soluções digitais modernas para empresas que querem crescer com mais presença, credibilidade e resultado online.</p>
     </div>
-
     <div class="footer-column">
       <h4>Navegação</h4>
       <a href="#inicio">Início</a>
@@ -322,30 +478,25 @@
       <a href="#portfolio">Portfólio</a>
       <a href="#contato">Contato</a>
     </div>
-
     <div class="footer-column">
       <h4>Contato</h4>
       <a href="mailto:systemstechfour@gmail.com">systemstechfour@gmail.com</a>
-      <a href="https://wa.me/5561999653096" target="_blank">(61) 99965-3096</a>
+      <a href="https://wa.me/5561999653096" target="_blank" rel="noopener">(61) 99965-3096</a>
+      <a href="https://instagram.com/techfoursystems" target="_blank" rel="noopener">@techfoursystems</a>
       <a href="termos.html">Termos e Condições</a>
       <a href="cookies.html">Política de Cookies</a>
     </div>
-
   </div>
-
   <div class="container footer-bottom">
     <p>© 2026 TechFour Systems. Todos os direitos reservados.</p>
   </div>
 </footer>
-<a
-  href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
-  target="_blank"
-  class="whatsapp-float"
->
-  💬
+
+<a href="https://wa.me/5561999653096?text=Olá,%20vim%20pelo%20site%20da%20TechFour%20Systems%20e%20gostaria%20de%20um%20orçamento."
+   target="_blank" rel="noopener" class="whatsapp-float" aria-label="Falar no WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script src="script.js"></script>
-
 </body>
 </html>
